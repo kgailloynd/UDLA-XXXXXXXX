@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Agregar otras acciones a compilar,
           echo probar, desplegar del proyecto.
+      - name: List repository files
+        run: ls ${{ github.workspace }}
+ 
+      # Step 5: Print the job status
+      - run: | 
+          echo "Job status: ${{ job.status }}."
